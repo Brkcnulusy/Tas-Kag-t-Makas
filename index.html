@@ -1,37 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rules-modal js-modal">
+        <div class="rules-header">
+          <div class="rules-title">
+            <h2>RULES</h2>
+          </div>
+          <div class="close-rules">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="rules-main">
+          <img src="./assets/images/image-rules-bonus.svg" alt="Rules" />
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <header>
+          <div class="logo-wrapper">
+            <img src="./assets/images/logo-bonus.svg" alt="Logo" />
+          </div>
+          <div class="score-board">
+            <h3>SCORE</h3>
+            <p>0</p>
+          </div>
+        </header>
+        <main>
+          <div class="user-choese js-user-choese">
+            <img src="./assets/images/bg-pentagon.svg" alt="" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <div class="rock">
+              <img src="./assets/images/icon-rock.svg" alt="Rock" />
+            </div>
+            <div class="paper">
+              <img src="./assets/images/icon-paper.svg" alt="Paper" />
+            </div>
+            <div class="scissors">
+              <img src="./assets/images/icon-scissors.svg" alt="Scissors" />
+            </div>
+            <div class="lizard">
+              <img src="./assets/images/icon-lizard.svg" alt="Lizard" />
+            </div>
+            <div class="spock">
+              <img src="./assets/images/icon-spock.svg" alt="Spock" />
+            </div>
+          </div>
+          <div class="play-screen">
+            <div class="time-screen">
+              <p>3</p>
+            </div>
+            <div class="picks">
+              <div class="user-pick">
+                <h3>YOU PİCKED</h3>
+                <img src="./assets/images/icon-rock.svg" alt="">
+              </div>
+              <div class="result-screen">
+                <h2>YOU LOSE</h3>
+                <button>PLAY AGAIN</button>
+              </div>
+              <div class="computer-pick">
+                <h3>COMPUTER PİCKED</h3>
+                <img src="./assets/images/icon-lizard.svg" alt="">
+              </div>
+            </div>
+          </div>
+          
+        </main>
+      </div>
+      <div class="rules">
+        <button>RULES</button>
+      </div>
+    </div>
+  </body>
 </html>

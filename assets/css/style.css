@@ -1,0 +1,319 @@
+:root {
+  --Scissors-Gradient: hsl(39, 89%, 49%);
+  --Paper-Gradient: hsl(230, 89%, 62%);
+  --Rock-Gradient: hsl(349, 71%, 52%);
+  --Lizard-Gradient: hsl(261, 73%, 60%);
+  --Radial-Gradient: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  --Cyan: hsl(189, 59%, 53%);
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Score-Text: hsl(229, 64%, 46%);
+  --Header-Outline: hsl(217, 16%, 45%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: var(--Radial-Gradient);
+  padding: 50px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .rules-modal {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  display: none;
+  flex-direction: column;
+  gap: 50px;
+  border-radius: 10px;
+}
+.container .rules-modal .rules-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .rules-modal .rules-header .rules-title {
+  flex: 1 1;
+}
+.container .rules-modal .rules-header .rules-title h2 {
+  font-size: 24px;
+}
+.container .rules-modal .rules-header .close-rules {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.container .rules-modal .rules-header .close-rules span {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  display: flex;
+  width: 20px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.3137254902);
+}
+.container .rules-modal .rules-header .close-rules span:nth-child(1) {
+  rotate: 45deg;
+}
+.container .rules-modal .rules-header .close-rules span:nth-child(2) {
+  rotate: -45deg;
+}
+.container .rules-modal .rules-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .rules {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.container .rules button {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--Radial-Gradient);
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.container .content-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.container .content-wrapper header {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid var(--Header-Outline);
+}
+.container .content-wrapper header .logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .content-wrapper header .score-board {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.container .content-wrapper header .score-board h3 {
+  color: var(--Score-Text);
+}
+.container .content-wrapper header .score-board p {
+  font-size: 50px;
+  color: var(--Dark-Text);
+}
+.container .content-wrapper main {
+  width: 840px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-wrapper main .user-choese {
+  width: 50%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .content-wrapper main .user-choese .scissors {
+  width: 140px;
+  height: 140px;
+  border: 20px solid var(--Scissors-Gradient);
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .content-wrapper main .user-choese .paper {
+  width: 140px;
+  height: 140px;
+  border: 20px solid var(--Paper-Gradient);
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translateY(-40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .content-wrapper main .user-choese .rock {
+  width: 140px;
+  height: 140px;
+  border: 20px solid var(--Rock-Gradient);
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  right: 10%;
+  bottom: 50px;
+  transform: translateX(-10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .content-wrapper main .user-choese .lizard {
+  width: 140px;
+  height: 140px;
+  border: 20px solid var(--Lizard-Gradient);
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 20%;
+  bottom: 50px;
+  transform: translateX(-20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .content-wrapper main .user-choese .spock {
+  width: 140px;
+  height: 140px;
+  border: 20px solid var(--Cyan);
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .content-wrapper main .play-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .content-wrapper main .play-screen .time-screen {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-wrapper main .play-screen .time-screen p {
+  font-size: 80px;
+  color: #fff;
+}
+.container .content-wrapper main .play-screen .picks {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .content-wrapper main .play-screen .picks .user-pick {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 20px solid var(--Rock-Gradient);
+  padding: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-wrapper main .play-screen .picks .user-pick img {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .content-wrapper main .play-screen .picks .result-screen {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-wrapper main .play-screen .picks .result-screen h2 {
+  font-size: 50px;
+  color: #fff;
+}
+.container .content-wrapper main .play-screen .picks .result-screen button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: var(--Dark-Text);
+  cursor: pointer;
+}
+.container .content-wrapper main .play-screen .picks .computer-pick {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 20px solid var(--Lizard-Gradient);
+  padding: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-wrapper main .play-screen .picks .computer-pick img {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=style.css.map */
