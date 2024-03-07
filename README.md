@@ -25,12 +25,12 @@ Kullanıcılar şunları yapabilmelidir:
 - Bilgisayara karşı Taş, Kağıt, Makas oynayın.
 - Bilgisayara karşı Taş, Kağıt, Makas, Kertenkele, Spock oynayın.
 
-### Screenshot
+### Ekran Görüntüsü
 
 ![](./assets/images/Ekran%20Alıntısı.PNG)
 
 
-## My process
+## Sürecim
 
 - Projeyi yapmak için 2 gün kadar çalıştım. Kurgusu ve tasarımı beni biraz uğraştırdı özellikle pentagonun köşelerine oyun butonları koyarken zorlandım. Keyifli bir projeydi tasarımın bazı yerlerini kendime göre değiştirdim ve sayfa yapısı yerine div açıp kapamayı tercih ettim. Güzel ve yorucu bir süreçti.
 
