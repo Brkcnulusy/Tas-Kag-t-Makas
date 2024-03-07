@@ -2,7 +2,7 @@
 - Taş, kağıt makas oyunun benzeridir. kullanıcılar bir obje seçer ve bu obje bir değişkende tutulur. Sonrasında Math.Random() metodu ile 5 objeden rastgele bir tanesi seçilir ve değişkende tutulur. Sonrasında kullanıcının seçtiği obje ile rastgele seçilen obje arasında karşılaştırma yapılır. Eğer kullanıcının seçtiği obje rastgele seçilen objeden üstün ise skor 1 arttırılır. Değilse skor 1 azaltılır. Beraberlik durumunda ise skorda değişiklik olmaz.
 
 ### Links
-- Live Site URL: [Add live site URL here](https://brkcnulusy.github.io/Tas-Kagit-Makas/)
+- Canlı Site Url'i: [Tas-Kagit-Makas](https://brkcnulusy.github.io/Tas-Kagit-Makas/)
 
 ## Kurallar 
 

@@ -99,7 +99,7 @@ const gamePlay = function () {
         resultScreen.style.display = 'flex';
         if(userPick.alt == 'Rock') {
             if(computerPick.alt == 'Scissors' || computerPick.alt == 'Lizard') {
-                result.innerHTML = 'YOU WİN'
+                result.innerHTML = 'YOU WIN'
                 yourScore++;
             } else if (computerPick.alt == 'Rock') {
                 result.innerHTML = 'DRAW'
@@ -110,7 +110,7 @@ const gamePlay = function () {
             }
         } else if (userPick.alt == 'Paper') {
             if(computerPick.alt == 'Rock' || computerPick.alt == 'Spock') {
-                result.innerHTML = 'YOU WİN'
+                result.innerHTML = 'YOU WIN'
                 yourScore++;
             } else if (computerPick.alt == 'Paper') {
                 result.innerHTML = 'DRAW'
@@ -121,7 +121,7 @@ const gamePlay = function () {
             }
         } else if (userPick.alt == 'Scissors') {
             if(computerPick.alt == 'Paper' || computerPick.alt == 'Lizard') {
-                result.innerHTML = 'YOU WİN'
+                result.innerHTML = 'YOU WIN'
                 yourScore++;
             } else if (computerPick.alt == 'Scissors') {
                 result.innerHTML = 'DRAW'
@@ -132,7 +132,7 @@ const gamePlay = function () {
             }
         } else if (userPick.alt == 'Lizard') {
             if(computerPick.alt == 'Paper' || computerPick.alt == 'Spock') {
-                result.innerHTML = 'YOU WİN'
+                result.innerHTML = 'YOU WIN'
                 yourScore++;
             } else if (computerPick.alt == 'Lizard') {
                 result.innerHTML = 'DRAW'
@@ -143,7 +143,7 @@ const gamePlay = function () {
             }
         } else {
             if(computerPick.alt == 'Scissors' || computerPick.alt == 'Rock') {
-                result.innerHTML = 'YOU WİN'
+                result.innerHTML = 'YOU WIN'
                 yourScore++;
             } else if (computerPick.alt == 'Spock') {
                 result.innerHTML = 'DRAW'
