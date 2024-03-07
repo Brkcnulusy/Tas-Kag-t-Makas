@@ -1,113 +1,71 @@
-# Frontend Mentor - Rock, Paper, Scissors solution
+# Taş, Kağıt, Makas, Kertenkele, Spock
+- Taş, kağıt makas oyunun benzeridir. kullanıcılar bir obje seçer ve bu obje bir değişkende tutulur. Sonrasında Math.Random() metodu ile 5 objeden rastgele bir tanesi seçilir ve değişkende tutulur. Sonrasında kullanıcının seçtiği obje ile rastgele seçilen obje arasında karşılaştırma yapılır. Eğer kullanıcının seçtiği obje rastgele seçilen objeden üstün ise skor 1 arttırılır. Değilse skor 1 azaltılır. Beraberlik durumunda ise skorda değişiklik olmaz.
 
-This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+### Links
+- Live Site URL: [Add live site URL here](https://brkcnulusy.github.io/Tas-Kagit-Makas/)
 
-## Table of contents
+## Kurallar 
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+-Taş: Taş, Makas ile Kertenkeleden üstündür.
+-Makas: Makas, Kağıt ile Kertenkeleden üstündür.
+-Kağıt: Kağıt, Taş ile Spocktan üstündür.
+-Kertenkele: Kertenkele, Spock ile Kağıttan üstündür.
+-Spock: Spock, Makas ile Taştan üstündür.
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## Genel Bakış
 
-## Overview
+- Taş, kağıt, makas oyununa kertenkele ve spock seçeneğinin eklenmiş halidir.
+- Responsive olarak tasarlanmış olup başka cihazlarda da sorunsuz şekilde çalışmaktadır.
 
-### The challenge
+### Meydan Okuma
 
-Users should be able to:
+Kullanıcılar şunları yapabilmelidir:
 
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+- Cihazlarının ekran boyutuna bağlı olarak oyun için en uygun düzeni görüntüleyebilir.
+- Bilgisayara karşı Taş, Kağıt, Makas oynayın.
+- Bilgisayara karşı Taş, Kağıt, Makas, Kertenkele, Spock oynayın.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/Ekran%20Alıntısı.PNG)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
-### Built with
+- Projeyi yapmak için 2 gün kadar çalıştım. Kurgusu ve tasarımı beni biraz uğraştırdı özellikle pentagonun köşelerine oyun butonları koyarken zorlandım. Keyifli bir projeydi tasarımın bazı yerlerini kendime göre değiştirdim ve sayfa yapısı yerine div açıp kapamayı tercih ettim. Güzel ve yorucu bir süreçti.
 
-- Semantic HTML5 markup
-- CSS custom properties
+### İle İnşa Edilmiştir
+
+- HTML5
+- CSS
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- SCSS
+- Mobil Tasarım 
+- JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+## Kurulum
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+1. Projeyi Kopyalayın
+İlk olarak, projeyi yerel bilgisayarınıza kopyalamk için GitHub'dan klonlayın:
+```bash
+git clone https://github.com/Brkcnulusy/Tas-Kagit-Makas.git
+cd Tas-Kagit-Makas
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+2. Bağımlılıkları Yükleyin
+Herhangi bir Bağlılığı bulunmamaktır. Projece vanilya.js ile yazılmıştır.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+3. Uygulamayı Çalıştırın
+Eğer Live Server uzantısı yüklü ise html dosyasına sağ tıklayıp ilk seçenek olan Live Server ile Açın seçeneğine tıklayıp açabilirsiniz.
+Live Server uzantısına sahip değilseniz terminale npm run dev yazarak ve Tarayıcınızda http://localhost:3000 adresine giderek uygulamayı kullanmaya başlayabilirsiniz.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+## Yazar
 
-### Continued development
+- Website - [Burak Can Ulusoy](https://mavifloravakfi.com/)
+- LinkedIn - [@Brkcnulusy](https://www.linkedin.com/in/burak-can-ulusoy-375120272/)
+- GitHub - [@Burakcnulusy](https://github.com/Brkcnulusy/)
+- E-Mail - [brkcnulusy@gmail.com] 
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+## Teşekkür
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Bu projeyi frontend mentor adlı sitede gördüm ve yapmaya karar verdim. Site proje için gerekli olan tasarım resimleri ve sitede kullanmam gereken image dosyalarını benimle paylaştı. Frontend Mentor Ekibine teşekkür ederim.
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
