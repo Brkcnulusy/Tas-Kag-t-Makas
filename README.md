@@ -6,11 +6,11 @@
 
 ## Kurallar 
 
--Taş: Taş, Makas ile Kertenkeleden üstündür.
--Makas: Makas, Kağıt ile Kertenkeleden üstündür.
--Kağıt: Kağıt, Taş ile Spocktan üstündür.
--Kertenkele: Kertenkele, Spock ile Kağıttan üstündür.
--Spock: Spock, Makas ile Taştan üstündür.
+- Taş: Taş, Makas ile Kertenkeleden üstündür.
+- Makas: Makas, Kağıt ile Kertenkeleden üstündür.
+- Kağıt: Kağıt, Taş ile Spocktan üstündür.
+- Kertenkele: Kertenkele, Spock ile Kağıttan üstündür.
+- Spock: Spock, Makas ile Taştan üstündür.
 
 ## Genel Bakış
 
