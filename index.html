@@ -18,7 +18,7 @@
           <div class="rules-title">
             <h2>RULES</h2>
           </div>
-          <div class="close-rules">
+          <div class="close-rules js-close-rules">
             <span></span>
             <span></span>
           </div>
@@ -34,45 +34,45 @@
           </div>
           <div class="score-board">
             <h3>SCORE</h3>
-            <p>0</p>
+            <p class="js-score">0</p>
           </div>
         </header>
         <main>
           <div class="user-choese js-user-choese">
-            <img src="./assets/images/bg-pentagon.svg" alt="" />
+            <img class="pentagon"  src="./assets/images/bg-pentagon.svg" alt="" />
 
             <div class="rock">
-              <img src="./assets/images/icon-rock.svg" alt="Rock" />
+              <img class="js-material" src="./assets/images/icon-rock.svg" alt="Rock" value="Rock" />
             </div>
             <div class="paper">
-              <img src="./assets/images/icon-paper.svg" alt="Paper" />
+              <img class="js-material" src="./assets/images/icon-paper.svg" alt="Paper" value="Paper" />
             </div>
             <div class="scissors">
-              <img src="./assets/images/icon-scissors.svg" alt="Scissors" />
+              <img class="js-material" src="./assets/images/icon-scissors.svg" alt="Scissors" value="Scissors" />
             </div>
             <div class="lizard">
-              <img src="./assets/images/icon-lizard.svg" alt="Lizard" />
+              <img class="js-material" src="./assets/images/icon-lizard.svg" alt="Lizard" value="Lizard" />
             </div>
             <div class="spock">
-              <img src="./assets/images/icon-spock.svg" alt="Spock" />
+              <img class="js-material" src="./assets/images/icon-spock.svg" alt="Spock" value="Spock"/>
             </div>
           </div>
-          <div class="play-screen">
-            <div class="time-screen">
-              <p>3</p>
+          <div class="play-screen js-play-screen">
+            <div class="time-screen js-time-screen">
+              <p class="js-time-counter">3</p>
             </div>
             <div class="picks">
               <div class="user-pick">
                 <h3>YOU PİCKED</h3>
-                <img src="./assets/images/icon-rock.svg" alt="">
+                <img class="js-user-pick" src="" alt="">
               </div>
-              <div class="result-screen">
-                <h2>YOU LOSE</h3>
-                <button>PLAY AGAIN</button>
+              <div class="result-screen js-result-screen">
+                <h2 class="js-result"></h3>
+                <button class="js-play-again">PLAY AGAIN</button>
               </div>
               <div class="computer-pick">
                 <h3>COMPUTER PİCKED</h3>
-                <img src="./assets/images/icon-lizard.svg" alt="">
+                <img class="js-computer-pick" src="" alt="">
               </div>
             </div>
           </div>
@@ -80,8 +80,10 @@
         </main>
       </div>
       <div class="rules">
-        <button>RULES</button>
+        <button class="js-rules-button">RULES</button>
       </div>
     </div>
+
+    <script type="module" src="./js/controller.js"></script>
   </body>
 </html>
